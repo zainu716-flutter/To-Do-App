@@ -6,7 +6,7 @@ import 'core/theme.dart';
 import 'presentation/screens/home_screen.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized(); // ✅ IMPORTANT
+  WidgetsFlutterBinding.ensureInitialized(); 
   runApp(const MyApp());
 }
 

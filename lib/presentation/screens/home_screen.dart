@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
             const TaskInput(),
             const SizedBox(height: 20),
 
-            // ✅ FIXED: Single ListView
+            
             Expanded(
               child: ListView(
                 children: [
@@ -65,10 +65,10 @@ class HomeScreen extends StatelessWidget {
 
             const SizedBox(height: 10),
 
-            // 🔘 Action Buttons
+            
             Row(
               children: [
-                // 🔴 Delete All
+                
                 Expanded(
                   child: ElevatedButton(
                     onPressed: provider.deleteAll,
@@ -90,7 +90,7 @@ class HomeScreen extends StatelessWidget {
 
                 const SizedBox(width: 12),
 
-                // ⚪ Clear Completed
+                
                 Expanded(
                   child: OutlinedButton(
                     onPressed: provider.clearCompleted,

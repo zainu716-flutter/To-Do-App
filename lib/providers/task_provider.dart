@@ -44,16 +44,16 @@ class TaskProvider extends ChangeNotifier {
   }
 
   
-  Future<void> addTask(String title) async {
-    if (title.trim().isEmpty) return;
+ Future<void> addTask(String title) async {
+  if (title.trim().isEmpty) return;
 
-    _tasks.add(Task(
-      id: Random().toString(),
-      title: title.trim(),
-    ));
+  _tasks.add(Task(
+    id: '${DateTime.now().millisecondsSinceEpoch}_${Random().nextInt(99999)}',
+    title: title.trim(),
+  ));
 
-    await _update();
-  }
+  await _update();
+}
 
   
   Future<void> toggleTask(String id) async {
